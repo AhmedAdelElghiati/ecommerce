@@ -11,6 +11,9 @@ public class ExpirableProduct extends Product implements Shippable {
         this.expirationDate = expirationDate;
         this.weight = weight;
     }
+    public LocalDate getExpirationDate() {
+        return expirationDate;
+    }
     @Override
     public boolean isExpired() {
         return expirationDate.isBefore(LocalDate.now());

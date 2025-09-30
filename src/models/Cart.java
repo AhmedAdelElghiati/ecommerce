@@ -18,11 +18,25 @@ public class Cart {
         items.add(new CartItem(product, amount));
     }
 
+    public void viewItems() {
+        if(items.isEmpty()) throw new IllegalStateException("The cart is empty");
+        double totalPrice = 0;
+        for(CartItem item : items) {
+            System.out.printf(" - %dx %s (%.2f$)%n", item.getQuantity(), item.getProduct().getName(), item.getTotalPrice());
+            totalPrice += item.getTotalPrice();
+        }
+        System.out.println("======================================");
+        System.out.println("Total price: " + totalPrice + " $");
+        System.out.println("======================================");
+    }
+
     public void checkOut() {
         List<Shippable> shippableItems = new ArrayList<>();
         double amount = 0;
         if(items.isEmpty()) throw new IllegalStateException("The cart is empty");
-
+        System.out.println("======================================");
+        System.out.println("Checking out...");
+        System.out.println("======================================");
         for(CartItem item : items) {
             Product product = item.getProduct();
             // check expiration date
