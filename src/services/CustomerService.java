@@ -24,11 +24,7 @@ public class CustomerService {
          List<Customer> customers = UserDataAccess.loadCustomers();
          for (Customer c : customers) {
              if (c.getEmail().equals(email) && c.checkPassword(password)) {
-                 System.out.println("Login successful");
                  return c;
-             } else  {
-                 System.out.println("Wrong email or password");
-                 return null;
              }
          }
          return null;
