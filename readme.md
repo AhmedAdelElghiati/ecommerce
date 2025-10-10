@@ -22,6 +22,8 @@ This project is a console-based e-commerce simulation built in Java. It serves a
 * **Dynamic Fee Calculation**: Automatically calculates the order subtotal, shipping fees based on weight, and the final paid amount.
 * **Interactive Console Menu**: A user-friendly command-line interface to navigate the application's features.
 
+*  **User Authentication**: Supports customer registration and login, with data stored in JSON files for persistence.
+
 ---
 
 ##  OOP Concepts Demonstrated
