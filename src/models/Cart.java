@@ -1,5 +1,6 @@
 package models;
 import interfaces.Shippable;
+import services.CustomerService;
 import services.ShippingService;
 
 import java.util.ArrayList;
@@ -57,6 +58,7 @@ public class Cart {
         double shippingCost = shippingService.calculateShippingCost(shippableItems);
         // reduce customer balance if available
         customer.reduceBalance(amount + shippingCost);
+        CustomerService.updateCustomerBalance(customer);
         // print receipt
 
         System.out.println("Cart items:");

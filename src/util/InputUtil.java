@@ -9,22 +9,22 @@ import java.util.Scanner;
 
 public class InputUtil {
     static Scanner scanner = new Scanner(System.in);
-    static String SEPERATOR = ("-".repeat(50));
+    static String SEPARATOR = ("-".repeat(50));
     public static void viewMenu() {
-        System.out.println(SEPERATOR);
+        System.out.println(SEPARATOR);
         System.out.println("1. View Available Products");
         System.out.println("2. Add Product to Cart");
         System.out.println("3. View Cart Items");
         System.out.println("4. Check Out");
         System.out.println("5. Exit");
-        System.out.println(SEPERATOR);
+        System.out.println(SEPARATOR);
         System.out.print("Enter your choice: ");
     }
     public static void viewProducts (Map<String , Product> products) {
         if (products.isEmpty() ) {
-            System.out.println(SEPERATOR);
+            System.out.println(SEPARATOR);
             System.out.println("No products available to display.");
-            System.out.println(SEPERATOR);
+            System.out.println(SEPARATOR);
         }
         String border = "+-------------------------+----------+----------+-----------------+-------------+-------------+";
         String header = "| %-23s | %-8s | %-8s | %-15s | %-11s | %-9s |%n";

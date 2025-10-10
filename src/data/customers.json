@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Ahmed Adel",
+    "email": "ahmedadel@gmail.com",
+    "mobileNumber": "0100000012",
+    "balance": 977890.0,
+    "passwordHash": "c2e3dd25"
+  },
+  {
+    "id": 2,
+    "name": "mohamed fathy",
+    "email": "fathy@gmail.com",
+    "mobileNumber": "01000234322",
+    "balance": 1043222.0,
+    "passwordHash": "bfd5698a"
+  },
+  {
+    "id": 3,
+    "name": "khaled",
+    "email": "khaledf@gmail.com",
+    "mobileNumber": "0111100000",
+    "balance": 300000.0,
+    "passwordHash": "944d3947"
+  },
+  {
+    "id": 4,
+    "name": "zain ahmed",
+    "email": "zain@gmail.com",
+    "mobileNumber": "0100001200",
+    "balance": 29890.0,
+    "passwordHash": "56760663"
+  },
+  {
+    "id": 5,
+    "name": "younes ahmed",
+    "email": "younes@gmail.com",
+    "mobileNumber": "0143897483",
+    "balance": 12000.0,
+    "passwordHash": "56760663"
+  }
+]
